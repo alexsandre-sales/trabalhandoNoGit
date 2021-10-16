@@ -161,6 +161,10 @@ footer span {
   align-items: center;
 }
 
+::placeholder{
+  font-size: medium;
+}
+
 @media (min-width: 580px) and (max-width: 700px) {
   .container {
     flex-direction: column;
