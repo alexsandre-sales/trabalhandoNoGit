@@ -7,6 +7,7 @@
   font-size: 1.2rem;
   font-family: 'Courier New', Courier, monospace;
 }
+
 header {
   width: 100%;
   height: 80px;
@@ -15,43 +16,53 @@ header {
   justify-content: space-between;
   background-color: rgb(49, 49, 49);
 }
+
 .img-logo {
   width: 75px;
   margin-left: 20px;
 }
+
 .img-logo img {
   width: 100%;
 }
+
 ul {
   display: flex;
 }
+
 li a {
   margin-right: 20px;
   padding: 10px;
   color: white;
 }
+
 a:hover {
   color: #00ffff;
   cursor: pointer;
 }
 
 /*-------------------------main------------------------- */
+
 .container {
   display: flex;
   width: 100%;
 }
+
 .container-img {
   width: 80%;
   text-align: center;
   margin: 0 auto;
 }
+
 .container-img img {
   width: 100%;
   margin-top: 50px;
 }
+
 .container-img p {
   margin: 10px;
 }
+
 .container-txt {
   margin: 50px;
 }
@@ -59,6 +70,7 @@ a:hover {
 .container-txt h1 {
   font-size: 2rem;
 }
+
 .container-txt p {
   margin-top: 50px;
   line-height: 1.4;
@@ -66,15 +78,87 @@ a:hover {
 }
 
 /*-------------------------footer------------------------- */
+
 footer {
   height: 50px;
   background-color: rgb(49, 49, 49);
   color: white;
   text-align: center;
 }
+
 footer span {
   display: inline-block;
   margin-top: 1%;
+}
+
+/*---------------------------pag. products ---------------------*/
+
+/*---------------------------barra de pesquisa-------------------------------*/
+
+.search {
+  width: 100%;
+  height: 45px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: rgb(49, 49, 49);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.input-search {
+  width: 20%;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.btn-submit {
+  width: 7%;
+  height: 25px;
+  margin-right: 15px;
+}
+
+.main-2 {
+  width: 100%;
+  height: 700px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.product1 {
+  width: 250px;
+  height: 270px;
+  border: solid 2px rgb(49, 49, 49);
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+
+.img2 {
+  width: 160px;
+}
+
+.product1 h4 {
+  font-family: "Arial", "Comic Sans", "Verdana", "Georgia";
+  font-size: 15px;
+  color: black;
+}
+
+.select-prod, .comprar {
+  background-color: white;
+  width: 40%;
+  height: 25px;
+  border: 2px solid black;
+  align-items: center;
 }
 
 @media (min-width: 580px) and (max-width: 700px) {
