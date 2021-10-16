@@ -17,6 +17,11 @@ header {
   background-color: rgb(49, 49, 49);
 }
 
+
+#btn-mobile{
+  display: none;
+}
+
 .img-logo {
   width: 75px;
   margin-left: 20px;
@@ -169,4 +174,86 @@ footer span {
   .container {
     flex-direction: column;
   }
+
 }
+=======
+
+}
+
+/*-------------------------menu-hamburguer------------------------- */
+
+@media (max-width:700px) {
+  #btn-mobile{
+    display: flex;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: .5rem;  
+    color: white;     
+}  
+   
+#menu{
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 3.5rem;
+    right: 0;
+    height: 0;
+    transition: .6s;
+    z-index: 1000;
+    background-color: rgb(49, 49, 49);
+    visibility: visible;
+    overflow-y: hidden;
+    border-radius: 25px;  
+}
+
+#nav.active #menu {
+    height: 50%;
+    visibility: visible;
+    overflow-y: auto;
+} 
+
+    
+#menu a{
+    padding: 0; 
+    margin: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#hamburguer{
+
+    border-top: 2px solid;
+    color: white;
+    display: block;
+    margin-top: .5rem;
+}   
+
+#hamburguer::after, #hamburguer::before{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: .3s;
+    position: relative;
+}  
+
+#nav.active #hamburguer{
+    border-top-color: transparent;
+}
+
+#nav.active #hamburguer::before{
+     transform: rotate(135deg);
+}
+  
+#nav.active #hamburguer::after{
+    transform: rotate(-135deg);
+    top: -7px;        
+}
+}
+
+
