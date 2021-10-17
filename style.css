@@ -90,11 +90,29 @@ footer {
 }
 
 footer span {
-  display: inline-block;
+  /*display: inline-block;*/
   margin-top: 1%;
 }
 
 /*---------------------------pag. products ---------------------*/
+
+/*-------------------------Início Pág. contato------------------------- */
+
+#divContato{
+  margin-top: 150px;
+  width: 450px;
+  height: 450px;
+  border: 1px solid black;
+  padding: 15px;
+  margin: auto;
+  clear: both;
+ 
+}
+
+/*-------------------------Fim Pág. Contato------------------------- */
+
+
+
 
 /*---------------------------barra de pesquisa-------------------------------*/
 
